@@ -2,7 +2,7 @@ import Strategy.NormalDriveStrategy;
 
 public class GoodsVechile extends Vehicle{
 
-    GoodsVechile(){
+    public GoodsVechile(){
 
         super (new NormalDriveStrategy());
 

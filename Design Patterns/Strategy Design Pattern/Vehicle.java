@@ -11,7 +11,7 @@ public class Vehicle {
     }
 
     public void drive(){
-        driveObject.drive();
+        this.driveObject.drive();
     }
     
 }

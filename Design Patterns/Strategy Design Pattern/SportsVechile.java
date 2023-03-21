@@ -2,7 +2,7 @@ import Strategy.SportsDriveStrategy;
 
 public class SportsVechile extends Vehicle{
 
-    SportsVechile(){
+    public SportsVechile(){
 
         super (new SportsDriveStrategy());
 
