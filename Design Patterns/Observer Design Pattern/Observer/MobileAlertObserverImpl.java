@@ -1,24 +1,23 @@
 package Observer;
 
-import Observable.StockObservable;
+import Observable.StocksObservable;
 
-public class MobileAlertObserverImpl implements NotificationALertObserver {
+public class MobileAlertObserverImpl implements NotificationAlertObserver {
     String username;
-    StockObservable observable;
+    StocksObservable observable;
 
-    public MobileAlertObserverImpl(String emailId, StockObservable observable ){
-
+    public MobileAlertObserverImpl(String emailId, StocksObservable observable ){
         this.observable = observable;
         this.username = emailId;
     }
 
     @Override
     public void update(){
-        sendMsgonM(emailId, "product is in stock hurry up");
+        sendMsg(username, "product is in stock hurry up");
     }
 
-    public void sendMsgonM(String emailId, string msg){
-        System.out.println("msg sent to: " + emailId);
+    public void sendMsg(String username, String msg){
+        System.out.println("msg sent to Mobile: " + username + ", MSG: " + msg);
     }
 
 }

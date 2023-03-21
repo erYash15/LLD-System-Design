@@ -2,13 +2,13 @@ package Observable;
 
 import Observer.NotificationAlertObserver;
 
-public interface StockObservable(){
+public interface StocksObservable{
 
     public void add(NotificationAlertObserver observer);
 
     public void remove(NotificationAlertObserver observer);
 
-    public void notifysubscriber();
+    public void notifySubscriber();
 
     public void setStockCount(int newStockAdded);
 

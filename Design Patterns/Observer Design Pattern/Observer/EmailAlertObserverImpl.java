@@ -1,12 +1,12 @@
 package Observer;
 
-import Observable.StockObservable;
+import Observable.StocksObservable;
 
-public class EmailAlertObserverImpl implements NotificationALertObserver {
+public class EmailAlertObserverImpl implements NotificationAlertObserver {
     String emailId;
-    StockObservable observable;
+    StocksObservable observable;
 
-    public EmailAlertObserverImpl(String emailId, StockObservable observable ){
+    public EmailAlertObserverImpl(String emailId, StocksObservable observable ){
 
         this.observable = observable;
         this.emailId = emailId;
@@ -17,8 +17,8 @@ public class EmailAlertObserverImpl implements NotificationALertObserver {
         sendMail(emailId, "product is in stock hurry up");
     }
 
-    public void sendMail(String emailId, string msg){
-        System.out.println("mail sent to: " + emailId);
+    public void sendMail(String emailId, String msg){
+        System.out.println("mail sent to: " + emailId + ", MSG :" + msg);
     }
 
 }

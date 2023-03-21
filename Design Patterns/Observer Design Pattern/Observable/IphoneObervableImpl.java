@@ -1,6 +1,6 @@
-package observable;
+package Observable;
 
-import observer.NotificationAlertObserver;
+import Observer.NotificationAlertObserver;
 
 import java.util.ArrayList;
 
@@ -29,10 +29,14 @@ public class IphoneObervableImpl implements StocksObservable{
 
     @Override
     public void setStockCount(int newStockAdded) {
-        if (stockCount == 0){
+        stockCount = newStockAdded;
+        if (stockCount > 0){
             notifySubscriber();
         }
-        stockCount = newStockAdded;
+        else{
+            System.out.println("Stocks: 0, No Notification Sent");
+        }
+
     }
 
     public int getStockCount() {
