@@ -3,7 +3,6 @@ package Observable;
 import Observer.NotificationAlertObserver;
 
 import java.util.ArrayList;
-
 import java.util.List;
 
 public class IphoneObervableImpl implements StocksObservable{
